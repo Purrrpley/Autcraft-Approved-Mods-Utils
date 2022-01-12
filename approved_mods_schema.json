@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": ["mods"],
+    "properties": {
+        "mods": {
+            "type": "array",
+            "items": {
+                "description": "Mod object",
+                "type": "object",
+                "required": ["name", "url"],
+                "properties": {
+                    "name": {
+                        "description": "Name of the mod",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "URL to the mod's page",
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "description": {
+                        "description": "Description of the mod",
+                        "type": "string"
+                    },
+                    "forks": {
+                        "type": "array",
+                        "items": {
+                            "description": "Mod fork object",
+                            "type": "object",
+                            "required": ["name", "url"],
+                            "properties": {
+                                "name": {
+                                    "description": "Name of the fork",
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "description": "URL to the fork's page",
+                                    "type": "string",
+                                    "format": "uri"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

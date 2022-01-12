@@ -1,0 +1,30 @@
+{
+    "$schema": "approved_mods_schema.json",
+    "mods": [
+        {
+            "name": "Sodium",
+            "url": "https://modrinth.com/mod/sodium",
+            "description": "Rendering engine and client-side optimisation mod, usually even better than OptiFine.",
+            "forks": [
+                {
+                    "name": "Iris Fork",
+                    "url": "https://github.com/IrisShaders/sodium-fabric"
+                },
+                {
+                    "name": "Starline Iris Fork",
+                    "url": "https://github.com/HyperCubeMC/sodium-fabric"
+                }
+            ]
+        },
+        {
+            "name": "Lithium",
+            "url": "https://modrinth.com/mod/lithium",
+            "description": "Server-side optimisation mod, however still providing some benefit when used on a client to join a non-integrated server."
+        },
+        {
+            "name": "Phosphor",
+            "url": "https://modrinth.com/mod/phosphor",
+            "description": "Lighting engine optimisation mod."
+        }
+    ]
+}
